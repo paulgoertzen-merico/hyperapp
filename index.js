@@ -417,6 +417,10 @@ export var app = (props) => {
       listener,
       (doing = false)
     ))
-
+  console.log('this is something')
+  const myval = 2 + 2;
+  if (myval === 4) {
+    throw Error('a problem'); 
+  }
   dispatch(props.init)
 }
